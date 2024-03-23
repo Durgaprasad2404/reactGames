@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
 
-import TicTacToe from "./components/tic tac toe/TicTacToe";
+import ClickByClick from "./components/ClickByClick/ClickbyClick";
 
 function App() {
   return (
     <div>
-      <TicTacToe />
+      <ClickByClick />
     </div>
   );
 }

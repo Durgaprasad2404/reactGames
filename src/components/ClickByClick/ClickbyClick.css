@@ -1,0 +1,301 @@
+/* HOME */
+.startPageBoard {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.startPageBoardImg {
+    height: 424px;
+    width: 360px;
+    position: absolute;
+}
+
+.startPageBoardHeading {
+    rotate: 2deg;
+    margin-top: 86px;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 204px;
+    width: 278px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+.Clickheading {
+    color: #ff0000;
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    -webkit-text-stroke: 1px #000;
+}
+
+.magic-text {
+    display: flex;
+    gap: 2px;
+}
+
+.magic-text1,
+.magic-text2,
+.magic-text3,
+.magic-text4,
+.magic-text5 {
+    height: 50px;
+    width: 50px;
+    font-size: xx-large;
+    font-family: 'Segoe UI';
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.magic-text1 {
+    background-color: #ff0000;
+    rotate: -10deg;
+}
+
+.magic-text2 {
+    background-color: #fa00ff;
+}
+
+.magic-text3 {
+    background-color: #00ff29;
+    rotate: 5deg;
+}
+
+.magic-text4 {
+    background-color: #0038ff;
+    rotate: -10deg;
+}
+
+.magic-text5 {
+    background-color: #ff6b00;
+    rotate: 10deg;
+}
+
+.PlayBtn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #fa00ff;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 5px 16px;
+}
+
+/* Game UI */
+.backToHomebtn {
+    background-color: #df8181;
+    border: 2px solid #000;
+    color: #fff;
+    padding: 5px 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    border-radius: 15px;
+}
+
+.level-buttons {
+    display: flex;
+    gap: 2px;
+    overflow-x: scroll;
+    margin: 20px 2px;
+}
+
+.level-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.level-btn.active {
+    background-color: #007bff;
+    color: #00ff29;
+    animation: zoom 1s ease-in-out infinite;
+}
+
+.startNumtxt {
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    backdrop-filter: blur(10px);
+}
+
+.startNum {
+    font-size: 50px;
+    color: #ff0000;
+}
+
+.gridWithImg {
+    position: relative;
+}
+
+.dog-img {
+    height: 90vh;
+    width: 100%;
+    object-fit: fill;
+    aspect-ratio: 3/2;
+}
+
+.imgContainer {
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+}
+
+.grid-container {
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: absolute;
+}
+
+.child-container {
+    background-color: lightgreen;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px dotted #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-container.clicked {
+    background-color: transparent;
+}
+
+.starting-number {
+    background-color: #ff0000;
+    animation: zoom 1s ease-in-out infinite;
+}
+
+.starting-number.clicked {
+    animation: none;
+}
+
+.cross-message {
+    position: absolute;
+    z-index: 99;
+    border: 10px solid red;
+    border-radius: 15px;
+    height: 90vh;
+    width: 100%;
+    margin: -10px;
+
+}
+
+.error-symbol {
+    font-size: 70vh;
+    width: 100%;
+    color: red;
+}
+
+
+.restart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    gap: 15px;
+}
+
+.restart-btn,
+.next-level-btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.restart-btn:hover,
+.next-level-btn:hover {
+    background-color: gray;
+    color: white;
+}
+
+.numbers {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.winning-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.congrats {
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    background-color: #f0f0f0a2;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #000;
+}
+
+.well-done {
+    width: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    background-color: #f0f0f0a2;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #000;
+}
+
+.did-it {
+    height: 50vh;
+    margin: 20px 2px;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .startPageBoard {
+        padding-top: 200px;
+    }
+}
