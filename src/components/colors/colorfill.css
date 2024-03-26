@@ -1,0 +1,196 @@
+.GameName {
+    display: flex;
+}
+
+.playColor {
+    font-size: 28px;
+    padding: 5px 15px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.color-c,
+.color-o,
+.color-l,
+.color-O,
+.color-r,
+.color-s {
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    font-size: 55px;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-align: center;
+    -webkit-text-stroke: 1px #000;
+    cursor: progress;
+}
+
+.color-c {
+    background-color: Red;
+    rotate: -10deg;
+    transition: all 2s;
+}
+
+.color-c:hover {
+    rotate: 10deg;
+}
+
+.color-o {
+    background-color: Orange;
+    rotate: 10deg;
+    transition: all 2s;
+}
+
+.color-o:hover {
+    rotate: -10deg;
+}
+
+.color-l {
+    background-color: Yellow;
+    rotate: -15deg;
+    transition: all 2s;
+}
+
+.color-l:hover {
+    rotate: 15deg;
+}
+
+.color-O {
+    background-color: Green;
+    rotate: 15deg;
+    transition: all 2s;
+}
+
+.color-O:hover {
+    rotate: -15deg;
+}
+
+.color-r {
+    background-color: Blue;
+    rotate: 15deg;
+    transition: all 2s;
+}
+
+.color-r:hover {
+    rotate: -15deg;
+}
+
+.color-s {
+    background-color: Indigo;
+    transition: all 2s;
+}
+
+.color-s:hover {
+    rotate: 10deg;
+}
+
+.GameUI,
+.colorFillHome,
+.winningContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.ColorContainer {
+    height: 250px;
+    width: 300px;
+    background-color: rgba(211, 211, 211, 0.386);
+    border: 1px solid rgb(255, 254, 254);
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.uncolored-icon {
+    font-size: 15em;
+}
+
+.colorQuestion {
+    background-color: rgba(0, 0, 0, 0.082);
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    font-style: oblique;
+    border-radius: 15px;
+    border: 1px solid #fff;
+}
+
+.colorInQuestion {
+    font-size: 50px;
+    background-color: #b2f70376;
+    padding: 3px 15px;
+    border-radius: 25px;
+}
+
+.color1,
+.color2,
+.color3,
+.color4,
+.color5,
+.color6,
+.color7 {
+    height: 100px;
+    width: 100px;
+}
+
+.winning-gif {
+    height: 300px;
+    border-radius: 30px;
+}
+
+.winning-para {
+    background-color: rgba(0, 0, 0, 0.082);
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    font-style: oblique;
+    border-radius: 15px;
+    border: 1px solid #fff;
+}
+
+.correctIncorrect {
+    background-color: rgba(0, 0, 0, 0.082);
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    font-style: oblique;
+    border-radius: 15px;
+    border: 1px solid #fff;
+}
+
+.colorGreen {
+    color: green;
+    border: 1px solid green;
+}
+
+.colorRed {
+    color: red;
+    border: 1px solid red;
+}
+
+@media screen and (max-width:576px) {
+
+    .color-c,
+    .color-o,
+    .color-l,
+    .color-O,
+    .color-r,
+    .color-s {
+        height: 30px;
+        width: 30px;
+        font-size: 35px;
+    }
+}

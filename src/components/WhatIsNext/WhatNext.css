@@ -1,0 +1,212 @@
+.alphabet-game-container {
+    background-size: cover;
+    object-fit: fill;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-infoPage {
+    display: "flex";
+    flex-direction: "column";
+    justify-content: "center";
+    align-items: "center";
+
+}
+
+.mainpageHeading {
+    font-family: 'Segoe UI';
+    color: #000;
+    font-size: 55px;
+    margin: 30px 0px;
+    text-shadow: 0 0 10px #007049, 0 0 5px #32cd32, 0 0 10px #32cd32, 0 0 15px #32cd32, 0 0 20px #32cd32, 0 0 30px #32cd32, 0 0 35px #32cd32;
+}
+
+.kid-show {
+    height: 100px;
+    animation: slideDown 3s ease-in-out infinite;
+}
+
+.startNow-btn {
+    font-family: 'Segoe UI';
+    color: #000;
+    font-weight: 800;
+    font-size: larger;
+    margin: 20px 0px;
+    border-radius: 25px;
+    border: none;
+    border: 2px solid #000;
+
+}
+
+
+.question {
+    font-family: 'Segoe UI';
+    color: #000;
+    font-size: 44px;
+    font-weight: bold;
+    margin: 38px 0px;
+    background-color: #97ef97;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+}
+
+.option {
+    flex-wrap: wrap;
+    background-color: #fff;
+    font-family: 'Segoe UI';
+    color: #100f0f;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px 25px;
+    padding: 15px 35px;
+    border: 2px solid #333;
+    border-radius: 25px;
+    font-size: 46px;
+    font-weight: 800;
+    transition: all 0.8s;
+    backdrop-filter: blur(15px);
+}
+
+.option:hover {
+    background-color: #ffd2d2;
+    transform: skew(-20deg);
+    border: 2px solid red;
+}
+
+.feedback {
+    font-family: 'Segoe UI';
+    color: #100f0f;
+    font-size: larger;
+}
+
+.feedback span:nth-child(1) {
+    font-size: xx-large;
+}
+
+.feedback span:nth-child(2) {
+    font-size: xx-large;
+}
+
+.loading-next {
+    font-family: 'Segoe UI';
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0 0 10px #32cd32, 0 0 20px #fc0303, 0 0 30px #fc0303, 0 0 40px #fc0303, 0 0 50px #fc0303, 0 0 60px #fc0303, 0 0 70px #fc0303;
+}
+
+.skipQuestion-btn {
+    font-family: 'Segoe UI';
+    border-radius: 15px;
+    color: black;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: x-large;
+    margin: 28px 0px;
+    transition: all 0.6s;
+}
+
+.skipQuestion-btn:hover {
+    background-color: #32cd32;
+    color: #f0f0f0;
+    transform: skew(-15deg);
+    border: 2px solid red;
+}
+
+.GoBackBtn {
+    background-color: #fff;
+    padding: 10px 15px;
+    font-size: 40px;
+    border-radius: 50px;
+}
+
+.celebrationContainer {
+    backdrop-filter: blur(5px);
+    padding: 10px 15px;
+}
+
+.celebration {
+    font-family: 'Segoe UI';
+    font-size: 45px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 2px solid #000;
+    padding: 5px 20px;
+    border-radius: 25px;
+    margin: 20px 0px;
+}
+
+.dance-gif {
+    height: 250px;
+    margin: 15px 0px;
+}
+
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+        /* Starting position */
+    }
+
+    100% {
+        transform: translateY(10px);
+        /* Ending position */
+    }
+}
+
+@media screen and (max-width:576px) {
+    .kid-show {
+        height: 200px;
+    }
+
+    .startNow-btn {
+        font-size: x-large;
+        padding: 10px;
+        height: fit-content;
+        margin: 100px 0px 0px 10px;
+    }
+}
+
+@media (min-width:768px) and (max-width:998px) {
+
+    .mainpageHeading {
+        font-size: 5em;
+    }
+
+    .kid-show {
+        height: 300px;
+    }
+
+    .startNow-btn {
+        font-size: xx-large;
+        padding: 10px;
+        height: fit-content;
+        margin: 150px 0px 0px 10px;
+    }
+}
+
+@media (min-width:998px) {
+
+    .mainpageHeading {
+        font-size: 59px;
+    }
+
+    .kid-show {
+        height: 280px;
+    }
+
+    .startNow-btn {
+        font-size: 40px;
+        padding: 10px 20px;
+        height: fit-content;
+        margin: 130px 0px 0px 10px;
+    }
+}

@@ -1,0 +1,136 @@
+.alphabetsContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+}
+
+.playBtn {
+    margin: 5px;
+    padding: 5px 19px;
+    background: #fff;
+    color: #000;
+    font-size: 39px;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 15px;
+    font-weight: 800;
+}
+
+.playBtn:hover {
+    animation: glow 1.5s infinite alternate;
+}
+
+.alphabetsCon {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alphabet-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.showContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alpha-img {
+    height: 350px;
+    width: 350px;
+}
+
+.alpha-fullname {
+    width: fit-content;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    transition: 2s all;
+    margin: 1.5rem 0px;
+    border-bottom: 5px solid;
+    background: -webkit-linear-gradient(#333, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.alpha-fullname:hover {
+    color: rgb(90, 156, 231);
+}
+
+
+.glow-button {
+    margin: 5px;
+    padding: 5px 19px;
+    background: #fff;
+    color: #000;
+    font-size: 39px;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.glow-button:hover {
+    animation: glow 1.5s infinite alternate;
+}
+
+
+
+@keyframes glow {
+    from {
+        background-color: #fff;
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+            0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+
+    to {
+        background-color: #0ffff0;
+        box-shadow: 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de,
+            0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de,
+            0 0 200px #ff00de;
+    }
+}
+
+@media (max-width:576px) {
+    .gameName-img {
+        width: 380px;
+    }
+
+    .alphabetsCon {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .alpha-img {
+        height: 300px;
+        width: 250px;
+        object-fit: fill;
+        aspect-ratio: 3/2;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:998px) {
+    .alphabetsCon {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .alpha-img {
+        height: 300px;
+        width: 250px;
+        object-fit: fill;
+        aspect-ratio: 3/2;
+        border-radius: 10px;
+    }
+
+    .alphabet-buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
