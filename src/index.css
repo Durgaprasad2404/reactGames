@@ -5,15 +5,27 @@
 
 /* Games */
 .totalGames-BG {
+  height: 100vh;
   background: rgb(216, 174, 238);
   background: linear-gradient(90deg, rgba(216, 174, 238, 1) 0%, rgba(160, 233, 148, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.gamesHeading {
+  text-align: center;
+  font-size: 55px;
+  letter-spacing: 7px;
+  font-style: oblique;
+  padding-top: 19px;
 }
 
 .totalGames-list {
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 2em;
   flex-wrap: wrap;
 
@@ -22,4 +34,9 @@
 .totalGames-listItems {
   font-size: xx-large;
   padding: 5px 15px;
+}
+
+.notFound-img {
+  height: 100vh;
+  width: 100%;
 }

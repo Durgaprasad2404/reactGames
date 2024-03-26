@@ -9,6 +9,7 @@ import AlphabetGame from "./components/WhatIsNext/WhatNext";
 import TicTacToe from "./components/tic tac tao/TicTacToe";
 import ClickByClick from "./components/clickByclick/ClickByClick";
 import ColorFill from "./components/colors/ColorFill";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/game3" element={<AlphabetGame />} />
           <Route exact path="/game4" element={<SpeakOut />} />
           <Route exact path="/game5" element={<ColorFill />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>

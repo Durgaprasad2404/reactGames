@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 function Games() {
   return (
     <div className="totalGames-BG">
+      <h1 className="gamesHeading">GAMES</h1>
       <div className="totalGames-list">
         <div>
           <Link to="/game1">
