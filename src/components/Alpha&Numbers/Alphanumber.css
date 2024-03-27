@@ -65,7 +65,7 @@
 
 .glow-button {
     margin: 5px;
-    padding: 5px 19px;
+    padding: 5px 15px;
     background: #fff;
     color: #000;
     font-size: 39px;
@@ -97,8 +97,16 @@
 }
 
 @media (max-width:576px) {
+    .alphabetsContainer {
+        height: fit-content;
+    }
+
+    .glow-button {
+        font-size: xx-large;
+    }
+
     .gameName-img {
-        width: 380px;
+        width: 350px;
     }
 
     .alphabetsCon {
@@ -112,6 +120,10 @@
         object-fit: fill;
         aspect-ratio: 3/2;
         border-radius: 10px;
+    }
+
+    .alpha-fullname {
+        font-size: 45px;
     }
 }
 

@@ -173,6 +173,10 @@
         height: fit-content;
         margin: 100px 0px 0px 10px;
     }
+
+    .celebration {
+        font-size: xx-large;
+    }
 }
 
 @media (min-width:768px) and (max-width:998px) {

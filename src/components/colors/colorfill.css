@@ -181,7 +181,21 @@
     border: 1px solid red;
 }
 
+.index-num {
+    font-size: xx-large;
+    color: #fff;
+    font-weight: 800;
+    -webkit-text-stroke: .3px #000;
+}
+
 @media screen and (max-width:576px) {
+    .colorQuestion {
+        font-size: 30px;
+    }
+
+    .winning-para {
+        font-size: 30px;
+    }
 
     .color-c,
     .color-o,

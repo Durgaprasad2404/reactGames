@@ -229,9 +229,15 @@ function ColorFill() {
                         width: "100px",
                         cursor: "pointer",
                         borderRadius: "10px",
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "center",
                       }}
                       onClick={() => checkAnswer(color)}
-                    ></div>
+                    >
+                      <p className="index-num">{index + 1}</p>
+                    </div>
                   ))}
                 </div>
               </div>
