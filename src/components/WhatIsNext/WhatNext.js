@@ -144,7 +144,7 @@ const AlphabetGame = () => {
     <>
       <div
         className="alphabet-game-container"
-        style={{ backgroundImage: "url('./WhatNextImages/BG.jpg')" }}
+        style={{ backgroundImage: "url('./images/WhatNextImages/BG.jpg')" }}
       >
         {!gameStarted && (
           <div className="game-infoPage">
@@ -155,7 +155,7 @@ const AlphabetGame = () => {
             </h1>
             <div style={{ display: "flex", justifyContent: "center" }}>
               <img
-                src="./WhatNextImages/kidshow.png"
+                src="./images/WhatNextImages/kidshow.png"
                 alt="#"
                 className="kid-show"
               />
@@ -224,7 +224,7 @@ const AlphabetGame = () => {
           <div className="celebrationContainer">
             <p className="celebration">Congratulations!</p>
             <img
-              src="./GIFs/celebration-kawaii.gif"
+              src="./images/GIFs/celebration-kawaii.gif"
               alt="#"
               className="dance-gif"
             />

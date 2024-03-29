@@ -55,5 +55,10 @@ h3 {
   font-size: x-large;
   color: #000;
   font-weight: 900;
-  -webkit-text-stroke: .3px #fff;
+}
+
+@media screen and (max-width:576px) {
+  .totalGames-BG {
+    height: fit-content;
+  }
 }

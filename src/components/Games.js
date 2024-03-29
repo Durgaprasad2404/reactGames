@@ -10,7 +10,7 @@ function Games() {
           <h3>ClickByClickToMagic</h3>
           <Link to="/game1">
             <img
-              src="./gameCovers/clickbyclickCover.png"
+              src="./images/gameCovers/clickbyclickCover.png"
               alt="#"
               className="gameCon"
             />
@@ -20,7 +20,7 @@ function Games() {
           <h3>TicTacToe</h3>
           <Link to="/game2">
             <img
-              src="./gameCovers/tictactoeCover.jpg"
+              src="./images/gameCovers/tictactoeCover.jpg"
               alt="#"
               className="gameCon"
             />
@@ -30,7 +30,7 @@ function Games() {
           <h3>AlphabetsGM</h3>
           <Link to="/game3">
             <img
-              src="./gameCovers/whatnextCover.jpg"
+              src="./images/gameCovers/whatnextCover.jpg"
               alt="#"
               className="gameCon"
             />
@@ -41,7 +41,7 @@ function Games() {
           <Link to="/game5">
             <div>
               <img
-                src="./gameCovers/colorsCover.jpeg"
+                src="./images/gameCovers/colorsCover.jpeg"
                 alt="#"
                 className="gameCon"
               />
@@ -53,7 +53,7 @@ function Games() {
           <Link to="/game4">
             <div>
               <img
-                src="./gameCovers/Alphabet.png"
+                src="./images/gameCovers/Alphabet.png"
                 alt="#"
                 className="gameCon"
               />

@@ -175,13 +175,13 @@ GameSound.volume=0.1;
         <div style={{display:'flex',flexDirection:'column',gap:'30px'}}>
           {gameState === "Draw" ? (
               <img
-                src="./GIFs/Draw.gif"
+                src="./images/GIFs/Draw.gif"
                 alt="#"
                 className="celebration-gif"
               />
             ) : (
               <img
-                src="./GIFs/winner.gif"
+                src="./images/GIFs/winner.gif"
                 alt="#"
                 className="celebration-gif"
               />

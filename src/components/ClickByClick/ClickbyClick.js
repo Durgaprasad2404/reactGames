@@ -6,41 +6,41 @@ import { TiArrowForward } from "react-icons/ti";
 import "./ClickbyClick.css";
 
 const levels = [
-  { image: "./HideImages/1.jpg", buttons: 5 },
-  { image: "./HideImages/2.jpg", buttons: 5 },
-  { image: "./HideImages/3.jpg", buttons: 5 },
-  { image: "./HideImages/4.jpg", buttons: 5 },
-  { image: "./HideImages/5.jpg", buttons: 5 },
-  { image: "./HideImages/6.jpg", buttons: 10 },
-  { image: "./HideImages/7.webp", buttons: 10 },
-  { image: "./HideImages/8.png", buttons: 10 },
-  { image: "./HideImages/9.jpg", buttons: 10 },
-  { image: "./HideImages/10.jpg", buttons: 10 },
-  { image: "./HideImages/11.jpg", buttons: 15 },
-  { image: "./HideImages/12.jpg", buttons: 15 },
-  { image: "./HideImages/13.jpeg", buttons: 15 },
-  { image: "./HideImages/14.jpg", buttons: 15 },
-  { image: "./HideImages/15.jpeg", buttons: 15 },
-  { image: "./HideImages/16.jpg", buttons: 20 },
-  { image: "./HideImages/17.jpg", buttons: 20 },
-  { image: "./HideImages/18.jpg", buttons: 20 },
-  { image: "./HideImages/19.jpg", buttons: 20 },
-  { image: "./HideImages/20.jpg", buttons: 20 },
-  { image: "./HideImages/21.jpg", buttons: 25 },
-  { image: "./HideImages/22.jpg", buttons: 25 },
-  { image: "./HideImages/23.jpg", buttons: 25 },
-  { image: "./HideImages/24.avif", buttons: 25 },
-  { image: "./HideImages/25.png", buttons: 25 },
-  { image: "./HideImages/26.avif", buttons: 30 },
-  { image: "./HideImages/27.png", buttons: 30 },
-  { image: "./HideImages/28.jpeg", buttons: 30 },
-  { image: "./HideImages/29.jpg", buttons: 30 },
-  { image: "./HideImages/30.jpeg", buttons: 30 },
-  { image: "./HideImages/31.jpg", buttons: 35 },
-  { image: "./HideImages/32.webp", buttons: 35 },
-  { image: "./HideImages/33.jpg", buttons: 35 },
-  { image: "./HideImages/34.jpg", buttons: 35 },
-  { image: "./HideImages/35.png", buttons: 35 },
+  { image: "./images/HideImages/1.jpg", buttons: 5 },
+  { image: "./images/HideImages/2.jpg", buttons: 5 },
+  { image: "./images/HideImages/3.jpg", buttons: 5 },
+  { image: "./images/HideImages/4.jpg", buttons: 5 },
+  { image: "./images/HideImages/5.jpg", buttons: 5 },
+  { image: "./images/HideImages/6.jpg", buttons: 10 },
+  { image: "./images/HideImages/7.webp", buttons: 10 },
+  { image: "./images/HideImages/8.png", buttons: 10 },
+  { image: "./images/HideImages/9.jpg", buttons: 10 },
+  { image: "./images/HideImages/10.jpg", buttons: 10 },
+  { image: "./images/HideImages/11.jpg", buttons: 15 },
+  { image: "./images/HideImages/12.jpg", buttons: 15 },
+  { image: "./images/HideImages/13.jpeg", buttons: 15 },
+  { image: "./images/HideImages/14.jpg", buttons: 15 },
+  { image: "./images/HideImages/15.jpeg", buttons: 15 },
+  { image: "./images/HideImages/16.jpg", buttons: 20 },
+  { image: "./images/HideImages/17.jpg", buttons: 20 },
+  { image: "./images/HideImages/18.jpg", buttons: 20 },
+  { image: "./images/HideImages/19.jpg", buttons: 20 },
+  { image: "./images/HideImages/20.jpg", buttons: 20 },
+  { image: "./images/HideImages/21.jpg", buttons: 25 },
+  { image: "./images/HideImages/22.jpg", buttons: 25 },
+  { image: "./images/HideImages/23.jpg", buttons: 25 },
+  { image: "./images/HideImages/24.avif", buttons: 25 },
+  { image: "./images/HideImages/25.png", buttons: 25 },
+  { image: "./images/HideImages/26.avif", buttons: 30 },
+  { image: "./images/HideImages/27.png", buttons: 30 },
+  { image: "./images/HideImages/28.jpeg", buttons: 30 },
+  { image: "./images/HideImages/29.jpg", buttons: 30 },
+  { image: "./images/HideImages/30.jpeg", buttons: 30 },
+  { image: "./images/HideImages/31.jpg", buttons: 35 },
+  { image: "./images/HideImages/32.webp", buttons: 35 },
+  { image: "./images/HideImages/33.jpg", buttons: 35 },
+  { image: "./images/HideImages/34.jpg", buttons: 35 },
+  { image: "./images/HideImages/35.png", buttons: 35 },
 ];
 
 function shuffleArray(array) {
@@ -219,7 +219,7 @@ function ClickByClick() {
   return (
     <div
       style={{
-        backgroundImage: 'url("./HideImages/ClickBG.jpg")',
+        backgroundImage: 'url("./images/HideImages/ClickBG.jpg")',
         backgroundSize: "cover",
         objectFit: "fill",
         height: "150vh",
@@ -231,7 +231,7 @@ function ClickByClick() {
         <>
           <div className="startPageBoard">
             <div className="startPageBoardImg">
-              <img src="./HideImages/headingBoard.png" alt="#" />
+              <img src="./images/HideImages/headingBoard.png" alt="#" />
             </div>
             <div className="startPageBoardHeading">
               <h1 className="Clickheading">Click By Click</h1>
@@ -334,7 +334,7 @@ function ClickByClick() {
               <div className="winning-message">
                 <p className="congrats"> YOU DID IT! 🎉</p>
                 <img
-                  src="./GIFs/celebrate-mocha.gif"
+                  src="./images/GIFs/celebrate-mocha.gif"
                   alt="#"
                   className="did-it"
                 />

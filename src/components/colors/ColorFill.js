@@ -180,7 +180,7 @@ function ColorFill() {
   return (
     <div
       style={{
-        backgroundImage: "url('./colorFill/ColorFillBG.jpg')",
+        backgroundImage: "url('./images/colorFill/ColorFillBG.jpg')",
         height: "100vh",
         width: "100%",
         backgroundSize: "cover",
@@ -247,7 +247,7 @@ function ColorFill() {
             <div className="winningContainer">
               <p className="winning-para">YAHOOO! YOU DID IT</p>
               <img
-                src="./colorFill/winningDance.gif"
+                src="./images/colorFill/winningDance.gif"
                 alt="#"
                 className="winning-gif"
               />
