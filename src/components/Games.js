@@ -7,28 +7,57 @@ function Games() {
       <h1 className="gamesHeading">GAMES</h1>
       <div className="totalGames-list">
         <div>
+          <h3>ClickByClickToMagic</h3>
           <Link to="/game1">
-            <button className="totalGames-listItems">Game-1</button>
+            <img
+              src="./gameCovers/clickbyclickCover.png"
+              alt="#"
+              className="gameCon"
+            />
           </Link>
         </div>
         <div>
+          <h3>TicTacToe</h3>
           <Link to="/game2">
-            <button className="totalGames-listItems">Game-2</button>
+            <img
+              src="./gameCovers/tictactoeCover.jpg"
+              alt="#"
+              className="gameCon"
+            />
           </Link>
         </div>
         <div>
+          <h3>AlphabetsGM</h3>
           <Link to="/game3">
-            <button className="totalGames-listItems">Game-3</button>
+            <img
+              src="./gameCovers/whatnextCover.jpg"
+              alt="#"
+              className="gameCon"
+            />
           </Link>
         </div>
         <div>
-          <Link to="/game4">
-            <button className="totalGames-listItems">Game-4</button>
-          </Link>
-        </div>
-        <div>
+          <h3>Colors</h3>
           <Link to="/game5">
-            <button className="totalGames-listItems">Game-5</button>
+            <div>
+              <img
+                src="./gameCovers/colorsCover.jpeg"
+                alt="#"
+                className="gameCon"
+              />
+            </div>
+          </Link>
+        </div>
+        <div>
+          <h3>AlphabetEN</h3>
+          <Link to="/game4">
+            <div>
+              <img
+                src="./gameCovers/Alphabet.png"
+                alt="#"
+                className="gameCon"
+              />
+            </div>
           </Link>
         </div>
       </div>

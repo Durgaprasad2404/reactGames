@@ -141,7 +141,16 @@ function ClickByClick() {
   useEffect(() => {
     setShowGrid(true); // Ensure grid is shown on initial render
   }, []);
-
+  useEffect(() => {
+    if (showWinningMessage && currentLevel === levels.length - 1) {
+      // If the current level is the last level and the winning message is shown
+      // Reset the game state and clear local storage
+      setCurrentLevel(0);
+      setCompletedLevels([]);
+      localStorage.removeItem("currentLevel");
+      localStorage.removeItem("completedLevels");
+    }
+  }, [currentLevel, showWinningMessage]);
   useEffect(() => {
     localStorage.setItem("completedLevels", JSON.stringify(completedLevels));
   }, [completedLevels]);
