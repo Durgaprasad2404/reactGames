@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/game3" element={<AlphabetGame />} />
           <Route exact path="/game4" element={<SpeakOut />} />
           <Route exact path="/game5" element={<ColorFill />} />
-          <Route path="*" element={<NotFound />} />
+          <Route  element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
