@@ -7,7 +7,7 @@ import Games from "./components/Games";
 import SpeakOut from "./components/Alpha&Numbers/AlphaNumbers";
 import AlphabetGame from "./components/WhatIsNext/WhatNext";
 import TicTacToe from "./components/tic tac tao/TicTacToe";
-import ClickByClick from "./components/clickByclick/ClickbyClick";
+import ClickByClick from "./components/ClickByClick/ClickbyClick";
 import ColorFill from "./components/colors/ColorFill";
 import NotFound from "./components/NotFound";
 
