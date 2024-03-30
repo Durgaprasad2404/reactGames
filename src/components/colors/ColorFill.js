@@ -173,6 +173,7 @@ function ColorFill() {
 
   useEffect(() => {
     setQuestion();
+    // eslint-disable-next-line
   }, []);
 
   const IconComponent = levelIcons[currentLevel];
