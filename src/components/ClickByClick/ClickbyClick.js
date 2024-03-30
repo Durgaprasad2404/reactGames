@@ -84,7 +84,7 @@ function ClickByClick() {
   const wrongAnswerSoundRef = useRef(new Audio("./sounds/error.wav"));
   const gamewinAnswerSoundRef = useRef(new Audio("./sounds/gamewin.wav"));
 
-  const handleComplete = useCallback(() => {
+  const handleComplete = () => {
     setTimeout(() => {
       gamewinAnswerSoundRef.current.play();
       setShowWinningMessage(true);
@@ -97,7 +97,7 @@ function ClickByClick() {
     setTimeout(() => {
       handleNextLevel();
     }, 6000); // Adjust the delay for next level (5000 milliseconds = 5 seconds)
-  })[currentLevel];
+  };
 
   useEffect(() => {
     localStorage.setItem("currentLevel", currentLevel.toString());
@@ -124,7 +124,8 @@ function ClickByClick() {
     if (clickedContainers.length === levels[currentLevel].buttons) {
       handleComplete(); // Add handleComplete to the dependency array
     }
-  }, [clickedContainers, currentLevel, handleComplete]);
+    // eslint-disable-next-line
+  }, [clickedContainers, currentLevel]);
 
   useEffect(() => {
     let timeoutId;
