@@ -80,9 +80,9 @@ function ClickByClick() {
   });
   const [gameStarted, setGameStarted] = useState(false);
   // sounds
-  const correctAnswerSoundRef = useRef(new Audio("/sounds/correct.wav"));
-  const wrongAnswerSoundRef = useRef(new Audio("/sounds/error.wav"));
-  const gamewinAnswerSoundRef = useRef(new Audio("/sounds/gamewin.wav"));
+  const correctAnswerSoundRef = useRef(new Audio("./sounds/correct.wav"));
+  const wrongAnswerSoundRef = useRef(new Audio("./sounds/error.wav"));
+  const gamewinAnswerSoundRef = useRef(new Audio("./sounds/gamewin.wav"));
   // const gameSoundRef = useRef(new Audio("/sounds/swathi.mpeg"));
 
   const handleComplete = useCallback(() => {
