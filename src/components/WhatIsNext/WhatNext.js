@@ -176,7 +176,7 @@ const AlphabetGame = () => {
           >
             <p className="question">
               What is the letter <br />
-              {question.questionType === "after" ? "after" : "before"}{" "}
+              <b style={{ fontSize: "50px", color: "red" }}>{question.questionType === "after" ? "after" : "before"}{" "}</b>
               <q style={{ fontSize: "55px", color: "red" }}>
                 {question.question}
               </q>{" "}
